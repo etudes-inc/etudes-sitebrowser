@@ -1,0 +1,113 @@
+{
+	"cdp:status":"0",
+	"count":"22",
+	"sites":
+	[
+		{
+			"title": "SITE 2",
+			"siteId": "2",
+			"type": "Course",
+			"contact": "Glenn R. Golden (ggolden@etudes.org)",
+			"term": "Fall 2012",
+			"termId": "34",
+			"description": "a site",
+			"published": "1"
+		},
+		{
+			"title": "SITE 4",
+			"siteId": "4",
+			"type": "Course",
+			"contact": "Glenn R. Golden (ggolden@etudes.org)",
+			"term": "Fall 2012",
+			"termId": "34",
+			"description": "something"
+		},
+		{
+			"title": "SITE 6",
+			"siteId": "6",
+			"type": "Course",
+			"contact": "Glenn R. Golden (ggolden@etudes.org)",
+			"term": "Summer 2012",
+			"termId": "33",
+			"description": "description",
+			"published": "1"
+		},
+		{
+			"title": "SITE 1",
+			"siteId": "1",
+			"type": "Course",
+			"contact": "Glenn R. Golden (ggolden@etudes.org)",
+			"term": "Fall 2012",
+			"termId": "34",
+			"description": "",
+			"published": "1"
+		},
+		{
+			"title": "SITE 3",
+			"siteId": "3",
+			"type": "Course",
+			"contact": "Vivie Sinou (vivie@etudes.org)",
+			"term": "Fall 2012",
+			"termId": "34",
+			"description": "",
+			"published": "1"
+		},
+		{
+			"title": "SITE 5",
+			"siteId": "5",
+			"type": "Course",
+			"contact": "Glenn R. Golden (ggolden@etudes.org)",
+			"term": "Fall 2012",
+			"termId": "34",
+			"description": ""
+		},
+		{
+			"title": "SITE 7",
+			"siteId": "7",
+			"type": "Course",
+			"contact": "Glenn R. Golden (ggolden@etudes.org)",
+			"term": "Summer 2012",
+			"termId": "33",
+			"description": ""
+		},
+		{
+			"title": "SITE 8",
+			"siteId": "8",
+			"type": "Course",
+			"contact": "Glenn R. Golden (ggolden@etudes.org)",
+			"term": "Summer 2012",
+			"termId": "33",
+			"description": "",
+			"published": "1"
+		},
+		{
+			"title": "SITE 9",
+			"siteId": "9",
+			"type": "Course",
+			"contact": "Glenn R. Golden (ggolden@etudes.org)",
+			"term": "Spring 2012",
+			"termId": "32",
+			"description": "",
+			"published": "1"
+		},
+		{
+			"title": "SITE 10",
+			"siteId": "10",
+			"type": "Project",
+			"contact": "Vivie Sinou (vivie@etudes.org)",
+			"term": "Winter 2012",
+			"termId": "31",
+			"description": "",
+			"published": "1"
+		},
+		{
+			"title": "SITE 11",
+			"siteId": "11",
+			"type": "Project",
+			"contact": "Vivie Sinou (vivie@etudes.org)",
+			"term": "Fall 2011",
+			"termId": "30",
+			"description": ""
+		}
+	]
+}

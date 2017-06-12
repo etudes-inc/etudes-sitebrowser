@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<registration>
+
+	<tool
+			id="sakai.sitebrowser"
+			title="Site Browser"
+			description="Find and view summarys of Sites."
+			dispatcher="E3"
+			e3Code="browsesites">
+
+	</tool>
+
+</registration>

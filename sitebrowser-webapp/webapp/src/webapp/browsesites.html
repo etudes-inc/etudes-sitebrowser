@@ -1,0 +1,125 @@
+<style type="text/css" media="all">
+.browsesites_rsrc a,
+.browsesites_rsrc a:link,
+.browsesites_rsrc a:visited
+{
+	color: #0000B0;
+	text-decoration: none;
+}
+.browsesites_rsrc a:hover
+{
+	text-decoration: underline;
+}
+</style>
+
+<!-- search criteria UI -->
+<div id="browsesites_search" class="e3_offstage">
+	<div class="e3_dialog">
+		<div class="e3_dialog_section">
+			<div class="e3_dialog_header">Site Type</div>
+			<div class="e3_dialog_instructions">Limit the search to Sites of this type; choose "Any" for all site types.</div>
+			<div class="e3_configure_set">
+				<div class="e3_configure_set_row">
+					<div class="e3_configure_set_entry_header" style="width:100px;">Type:</div>
+					<div class="e3_configure_set_entry_field">
+						<div>
+							<input type="radio" name="browsesites_siteType" value="course" id="browsesites_siteTypeCourse" checked="checked" />
+							<label for="browsesites_siteTypeCourse">Course</label>
+						</div>
+						<div>
+							<input type="radio" name="browsesites_siteType" value="project" id="browsesites_siteTypeProject" />
+							<label for="browsesites_siteTypeProject">Project</label>
+						</div>
+						<div>
+							<input type="radio" name="browsesites_siteType" value="any" id="browsesites_siteTypeAny" />
+							<label for="browsesites_siteTypeAny">Any</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="e3_dialog_section" id="browsesites_institutionUi">
+			<div class="e3_dialog_header">Educational Institution</div>
+			<div class="e3_dialog_instructions">Limit the search to Sites from this educational institution; choose "Any" for all institutions.</div>
+			<div class="e3_configure_set">
+				<div class="e3_configure_set_row">
+					<div class="e3_configure_set_entry_header" style="width:100px;"><label for="browsesites_institution">Institution:</label></div>
+					<div class="e3_configure_set_entry_field"><select name="browsesites_institution" id="browsesites_institution"></select></div>
+				</div>
+			</div>
+		</div>
+		<div class="e3_dialog_section" id="browsesites_termUi">
+			<div class="e3_dialog_header">Academic Term</div>
+			<div class="e3_dialog_instructions">Limit the search to Sites from this academic term; choose "Any" for all terms.</div>
+			<div class="e3_configure_set">
+				<div class="e3_configure_set_row">
+					<div class="e3_configure_set_entry_header" style="width:100px;"><label for="browsesites_term">Term:</label></div>
+					<div class="e3_configure_set_entry_field"><select name="browsesites_term" id="browsesites_term"></select></div>
+				</div>
+			</div>
+		</div>
+		<div class="e3_dialog_section">
+			<div class="e3_dialog_header">Site Title</div>
+			<div class="e3_dialog_instructions">Limit the search to Sites with this partial title; leave blank for all matching sites.</div>
+			<div class="e3_configure_set">
+				<div class="e3_configure_set_row">
+					<div class="e3_configure_set_entry_header" style="width:100px;"><label for="browsesites_title">Title:</label></div>
+					<div class="e3_configure_set_entry_field"><input id="browsesites_title" type="text" size="32" /></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="browsesites_search_navbar" class="e3_tool_navbar">
+	</div>
+</div>
+
+<!-- results UI -->
+<div id="browsesites_results" class="e3_offstage">
+	<div style="font-size:12px; margin:0 30px 20px 30px; color:#555; background:#E8E8F0; padding:4px 8px 4px 8px;">
+		<span>Site Type: </span><span style="font-weight:bold; font-variant:small-caps; text-transform:capitalize;" id="browsesites_results_criteria_type"></span>
+		<span style="margin-left: 20px;">Educational Institution: </span><span style="font-weight:bold; font-variant:small-caps; text-transform:capitalize;" id="browsesites_results_criteria_inst"></span>
+		<span id="browsesites_results_criteria_term_container"><span style="margin-left: 20px;">Academic Term: </span><span style="font-weight:bold; font-variant:small-caps; text-transform:capitalize;" id="browsesites_results_criteria_term"></span></span>
+		<span id="browsesites_results_criteria_search_container"><span style="margin-left: 20px;"">Search For: </span><span style="font-weight:bold; font-variant:small-caps;" id="browsesites_results_criteria_search"></span></span>
+		<span style="margin-left: 20px;"">Found: </span><span style="font-weight:bold; font-variant:small-caps;" id="browsesites_results_count"></span> Site<span id="browsesites_results_count_plural">s</span>
+	</div>
+	<div class="e3_tool_items">
+		<table id="browsesites_results_table" class="e3_tool_item_table">
+			<thead />
+			<tbody />
+		</table>
+		<div id="browsesites_noSites" class="e3_offstage e3_emptyWarning">
+			No Sites Found
+		</div>
+	</div>
+	<div id="browsesites_results_navbar" class="e3_tool_navbar">
+	</div>
+</div>
+
+<!-- site view UI -->
+<div id="browsesites_view" class="e3_offstage">
+	<div class="e3_dialog">
+		<div style="margin:4px 8px 8px 20px;">
+			<div style="font-size:20px; color:rgb(8, 74, 135);" id="browsesites_view_title"></div>
+			<iframe class="e3_offstage" style="margin:12px 0 12px 0; width:100%; height:300px;" id="browsesites_view_info" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" align="middle" src=""></iframe>
+			<pre class="e3_offstage" style="font:12px Verdana,Arial,Helvetica,sans-serif; margin-top:8px;" id="browsesites_view_description"></pre>
+			<div id="browsesites_view_item" style="margin:12px 0 12px 0;" class="e3_offstage">
+				<div id="browsesites_view_item_title" class="e3_dialog_header e3_font"></div>
+				<div id="browsesites_view_item_content"></div>
+			</div>
+		</div>
+		<div class="e3_dialog_section">
+			<div class="e3_dialog_header">Public Announcements</div>
+			<div id="browsesites_view_annc"></div>
+		</div>
+		<div class="e3_dialog_section">
+			<div class="e3_dialog_header">Public Resources</div>
+			<div id="browsesites_view_rsrc"></div>
+		</div>
+		<div class="e3_dialog_section">
+			<div class="e3_dialog_header">Public Syllabus</div>
+			<div style='margin:8px 8px 8px 8px;' id="browsesites_view_syllabus"></div>
+		</div>	
+	</div>
+	<div id="browsesites_view_navbar" class="e3_tool_navbar">
+	</div>
+</div>

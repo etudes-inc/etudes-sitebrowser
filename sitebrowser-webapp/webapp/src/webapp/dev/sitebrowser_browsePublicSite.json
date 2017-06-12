@@ -1,0 +1,40 @@
+{
+	"cdp:status":"0",
+	"site":
+	{
+		"title": "SITE 4",
+		"siteId": "4",
+		"type": "Course",
+		"contact": "Glenn R. Golden (ggolden@etudes.org)",
+		"term": "Fall 2012",
+		"termId": "34",
+		"infoUrl": "https://myetudes.org/access/content/public/images/home/seagull.gif",
+		"pubAnncouncements":
+		[
+			{
+				"subject": "One Announcement",
+				"from": "Glenn R. Golden",
+				"date": "May 22, 2013 12:26 PM",
+				"ref": "/announcement/msg/69c0460e-fa30-4961-804d-ec27f21b2c34/main/6cb22f47-5669-41e4-80de-174391ac85be"
+			},
+			{
+				"subject": "Two Announcement",
+				"from": "Glenn R. Golden",
+				"date": "May 22, 2013 12:26 PM",
+				"ref": "/announcement/msg/69c0460e-fa30-4961-804d-ec27f21b2c34/main/6cb22f47-5669-41e4-80de-174391ac85be"
+			}
+		],
+		"pubResources":
+		[
+			{
+				"type": "image/png",
+				"name": "android.png",
+				"owner": "Glenn R. Golden",
+				"date": "Dec 25, 2012 12:24 PM",
+				"size": "6 KB",
+				"url": "http://images.apple.com/home/images/billboard_ipad_hero.jpg"
+			}
+		],
+		"description": "the long description"
+	}
+}
