@@ -104,7 +104,6 @@ tool_obj =
 	
 	institutions:
 	[
-		{code: "cos", name: "College of the Siskiyous"},
 		{code: "elac", name: "East Los Angeles College"},
 		{code: "ecc", name: "El Camino College"},
 		{code: "etu", name: "Etudes"},
@@ -112,15 +111,12 @@ tool_obj =
 		{code: "hc", name: "Hartnell College"},
 		{code: "ind", name: "Individual"},
 		{code: "jpds", name: "J Productions Dental Seminars, Inc."},
-		{code: "ltcc", name: "Lake Tahoe Community College"},
 		{code: "lacc", name: "Los Angeles City College"},
 		{code: "lahc", name: "Los Angeles Harbor College"},
 		{code: "lamcitv", name: "Los Angeles Mission College - Instructional Television"},
 		{code: "lavc", name: "Los Angeles Valley College"},
-		{code: "mend", name: "Mendocino College"},
 		{code: "jatc", name: "NORCAL JATC"},
 		{code: "sjdc", name: "San Joaquin Delta College"},
-		{code: "tc", name: "Taft College"},
 		{code: "wlac", name: "West Los Angeles College"}
 	],
 
